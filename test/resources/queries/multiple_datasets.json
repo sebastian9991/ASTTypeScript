@@ -1,0 +1,19 @@
+{
+  "title": "reject query references multiple datasets",
+  "input": {
+    "WHERE": {
+      "GT": {
+        "courses_avg": 97
+      }
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "courses_dept",
+        "courses1_avg"
+      ],
+      "ORDER": "courses1_avg"
+    }
+  },
+  "errorExpected": true,
+  "expected": "InsightError"
+}

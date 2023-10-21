@@ -1,0 +1,28 @@
+{
+	"title": "No Column Test",
+	"input": {
+		"WHERE": {
+			"AND": [
+				{
+					"IS": {
+						"courses_dept": "math*"
+					}
+				},
+				{
+					"LT": {
+						"courses_avg": 52
+					}
+				}
+			]
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"courses_dept",
+				"courses_id",
+				"courses_avg"
+			]
+		}
+	},
+	"errorExpected": false,
+	"expected": [{"courses_dept":"math","courses_id":"110","courses_avg":51.49},{"courses_dept":"math","courses_id":"180","courses_avg":51.5},{"courses_dept":"math","courses_id":"180","courses_avg":46.52},{"courses_dept":"math","courses_id":"180","courses_avg":49.95},{"courses_dept":"math","courses_id":"184","courses_avg":50.13},{"courses_dept":"math","courses_id":"184","courses_avg":51.04}]
+}

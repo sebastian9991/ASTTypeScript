@@ -1,0 +1,28 @@
+{
+	"title": "Very invalid query",
+	"input": {
+		"WHERE": {
+			"AND": [
+				{
+					"IS": {
+
+					}
+				},
+				{
+					"LT": {
+						"courses_avg": 52
+					}
+				}
+			]
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"courses_dept",
+				"courses_id",
+				"courses_avg"
+			]
+		}
+	},
+	"errorExpected": true,
+	"expected": "InsightError"
+}

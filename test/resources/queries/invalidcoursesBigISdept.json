@@ -1,0 +1,28 @@
+{
+  "title" : " test",
+
+  "input" : {
+    "WHERE": {
+      "IS": {
+        "coursesBig_dept": "c*"
+      }
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "coursesBig_instructor",
+        "coursesBig_avg"
+      ],
+      "ORDER": "coursesBig_avg"
+    }
+  }
+
+,
+
+  "errorExpected" : true,
+
+  "verbose" : false,
+
+  "expected" : "ResultTooLargeError"
+
+
+}

@@ -1,0 +1,39 @@
+{
+  "title" : "Invalid query test: ResultToLargeError",
+
+  "input" :
+  {
+
+    "WHERE":{
+
+      "GT":{
+
+        "coursesBig_avg":0
+
+      }
+
+    },
+
+    "OPTIONS":{
+
+      "COLUMNS":[
+
+        "coursesBig_avg"
+
+      ],
+
+      "ORDER":"coursesBig_avg"
+
+    }
+
+  }
+,
+
+  "errorExpected" : true,
+
+  "verbose" : false,
+
+  "expected" : "ResultTooLargeError"
+
+
+}

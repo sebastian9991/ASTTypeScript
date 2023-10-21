@@ -1,0 +1,49 @@
+{
+  "title" : " test",
+
+  "input" : {
+    "WHERE": {
+      "IS": {
+        "coursesBig_instructor": "*rea, jaclyn*"
+      }
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "coursesBig_instructor",
+        "coursesBig_avg"
+      ],
+      "ORDER": "coursesBig_avg"
+    }
+  }
+
+,
+
+  "errorExpected" : false,
+
+  "verbose" : false,
+
+  "expected" :  [
+    {
+      "coursesBig_instructor": "rea, jaclyn",
+      "coursesBig_avg": 53.64
+    },
+    {
+      "coursesBig_instructor": "rea, jaclyn",
+      "coursesBig_avg": 55.63
+    },
+    {
+      "coursesBig_instructor": "rea, jaclyn",
+      "coursesBig_avg": 61.63
+    },
+    {
+      "coursesBig_instructor": "lam, mark;peterson, jenny;pickren, graham;rea, jaclyn",
+      "coursesBig_avg": 63.67
+    },
+    {
+      "coursesBig_instructor": "rea, jaclyn",
+      "coursesBig_avg": 67.32
+    }
+  ]
+
+
+}

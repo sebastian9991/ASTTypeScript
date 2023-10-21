@@ -1,0 +1,39 @@
+{
+	"title" : " AND Empty",
+
+	"input" : {
+		"WHERE": {
+			"AND": [
+				{
+					"EQ": {
+						"courses_avg": 1000
+					}
+				},
+				{
+					"GT": {
+						"courses_pass": 200
+					}
+				}
+			]
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"courses_id",
+				"courses_dept",
+				"courses_pass"
+			],
+			"ORDER": "courses_pass"
+		}
+	}
+
+,
+
+	"errorExpected" : false,
+
+	"verbose" : false,
+
+	"expected" : [
+	]
+
+
+}

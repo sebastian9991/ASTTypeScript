@@ -1,0 +1,71 @@
+{
+  "title" : "validcoursesBigLt test",
+
+  "input" :
+  {
+
+    "WHERE":{
+
+      "LT":{
+
+        "coursesBig_avg":30
+
+      }
+
+    },
+
+    "OPTIONS":{
+
+      "COLUMNS":[
+
+        "coursesBig_instructor",
+
+        "coursesBig_avg"
+
+      ],
+
+      "ORDER":"coursesBig_avg"
+
+    }
+
+  }
+
+,
+
+  "errorExpected" : false,
+
+  "verbose" : false,
+
+  "expected" :  [
+    {
+      "coursesBig_instructor": "",
+      "coursesBig_avg": 0
+    },
+    {
+      "coursesBig_instructor": "",
+      "coursesBig_avg": 0
+    },
+    {
+      "coursesBig_instructor": "",
+      "coursesBig_avg": 0
+    },
+    {
+      "coursesBig_instructor": "",
+      "coursesBig_avg": 1
+    },
+    {
+      "coursesBig_instructor": "",
+      "coursesBig_avg": 4
+    },
+    {
+      "coursesBig_instructor": "",
+      "coursesBig_avg": 4
+    },
+    {
+      "coursesBig_instructor": "bendickson, dennis",
+      "coursesBig_avg": 4.5
+    }
+  ]
+
+
+}

@@ -1,0 +1,57 @@
+{
+	"title" : "NULLORTest for null and",
+
+	"input" : {
+		"WHERE": {
+			"OR": [
+				{
+					"AND": [
+						{
+							"AND": [
+								{
+									"GT": {
+										"courses_avg": 98
+									}
+								},
+								{
+									"IS": {
+										"courses_dept": "c*"
+									}
+								}
+							]
+						},
+						{
+							"EQ": {
+								"courses_avg": 95
+							}
+						}
+					]
+				},
+				{
+					"GT": {
+						"courses_pass": 2500
+					}
+				}
+			]
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"courses_avg",
+				"courses_dept",
+				"courses_pass"
+			],
+			"ORDER": "courses_pass"
+		}
+	}
+
+,
+
+	"errorExpected" : false,
+
+	"verbose" : false,
+
+	"expected" : [{"courses_avg":71.51,"courses_dept":"engl","courses_pass":2502},{"courses_avg":71.71,"courses_dept":"engl","courses_pass":2557},{"courses_avg":73.17,"courses_dept":"engl","courses_pass":2655},{"courses_avg":72.91,"courses_dept":"engl","courses_pass":2698},{"courses_avg":71.91,"courses_dept":"engl","courses_pass":2994}
+	]
+
+
+}

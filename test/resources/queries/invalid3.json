@@ -1,0 +1,39 @@
+{
+  "title" : "Invalid query test on Multiple datasets: InsightError",
+
+  "input" :
+  {
+
+    "WHERE":{
+
+      "GT":{
+
+        "courses_avg":90
+
+      }
+
+    },
+
+    "OPTIONS":{
+
+      "COLUMNS":[
+
+        "coursesBig_avg"
+
+      ],
+
+      "ORDER":"courses_avg"
+
+    }
+
+  }
+,
+
+  "errorExpected" : true,
+
+  "verbose" : false,
+
+  "expected" : "InsightError"
+
+
+}

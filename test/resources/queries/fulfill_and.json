@@ -1,0 +1,29 @@
+{
+  "title": "fulfill query with and",
+  "input": {
+    "WHERE": {
+      "AND": [
+        {
+          "EQ": {
+            "courses_avg": 90
+          }
+        },
+        {
+          "IS": {
+            "courses_dept": "math"
+          }
+        }
+      ]
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "courses_dept",
+        "courses_id",
+        "courses_avg"
+      ],
+      "ORDER": "courses_avg"
+    }
+  },
+  "errorExpected": false,
+  "expected": [{"courses_dept":"math","courses_id":"589","courses_avg":90},{"courses_dept":"math","courses_id":"532","courses_avg":90},{"courses_dept":"math","courses_id":"532","courses_avg":90},{"courses_dept":"math","courses_id":"523","courses_avg":90},{"courses_dept":"math","courses_id":"523","courses_avg":90},{"courses_dept":"math","courses_id":"516","courses_avg":90},{"courses_dept":"math","courses_id":"516","courses_avg":90},{"courses_dept":"math","courses_id":"503","courses_avg":90},{"courses_dept":"math","courses_id":"503","courses_avg":90},{"courses_dept":"math","courses_id":"423","courses_avg":90},{"courses_dept":"math","courses_id":"423","courses_avg":90}]
+}

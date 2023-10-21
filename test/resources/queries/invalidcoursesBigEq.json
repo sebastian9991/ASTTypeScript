@@ -1,0 +1,41 @@
+{
+  "title" : "invalidcoursesBigEQ test",
+
+  "input" : {
+
+    "WHERE":{
+
+      "EQ":{
+
+        "coursesBig_avg": 0
+
+      }
+
+    },
+
+    "OPTIONS":{
+
+      "COLUMNS":[
+
+        0,
+
+        "coursesBig_avg"
+
+      ],
+
+      "ORDER":"coursesBig_avg"
+
+    }
+
+  }
+
+,
+
+  "errorExpected" : true,
+
+  "verbose" : false,
+
+  "expected" : "InsightError"
+
+
+}

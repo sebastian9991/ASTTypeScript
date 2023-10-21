@@ -1,0 +1,58 @@
+{
+  "title" : " test",
+
+  "input" : {
+
+    "WHERE":{
+
+      "AND": [{
+        "GT" : {
+          "coursesBig_avg" : 98
+        }
+
+      } , {
+        "IS": {
+          "coursesBig_dept": "c*"
+        }
+
+
+
+      }
+      ]
+    },
+
+    "OPTIONS":{
+
+      "COLUMNS":[
+
+        "coursesBig_id",
+
+        "coursesBig_dept",
+
+        "coursesBig_pass"
+
+      ],
+
+      "ORDER":"coursesBig_pass"
+
+    }
+
+  }
+
+,
+
+  "errorExpected" : false,
+
+  "verbose" : false,
+
+  "expected" :  [
+    {
+      "coursesBig_id": "574",
+      "coursesBig_dept": "cnps",
+      "coursesBig_pass": 16
+    }
+  ]
+
+
+
+}

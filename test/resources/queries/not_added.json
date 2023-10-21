@@ -1,0 +1,19 @@
+{
+  "title": "reject query references dataset not added",
+  "input": {
+    "WHERE": {
+      "GT": {
+        "courses1_avg": 97
+      }
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "courses1_dept",
+        "courses1_avg"
+      ],
+      "ORDER": "courses1_avg"
+    }
+  },
+  "errorExpected": true,
+  "expected": "InsightError"
+}

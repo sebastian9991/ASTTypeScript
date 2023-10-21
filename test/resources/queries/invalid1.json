@@ -1,0 +1,39 @@
+{
+  "title" : "Invalid query test: InsightError",
+
+  "input" :
+  {
+
+    "WHERE":{
+
+      "GT":{
+
+        "courses1_avg":70
+
+      }
+
+    },
+
+    "OPTIONS":{
+
+      "COLUMNS":[
+
+        "courses1_avg"
+
+      ],
+
+      "ORDER":"courses1_avg"
+
+    }
+
+  }
+,
+
+  "errorExpected" : true,
+
+  "verbose" : false,
+
+  "expected" : "InsightError"
+
+
+}

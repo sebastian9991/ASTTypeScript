@@ -1,0 +1,49 @@
+{
+	"title": "triple AND",
+	"input": {
+		"WHERE": {
+			"AND": [
+				{
+					"AND": [
+						{
+							"AND": [
+								{
+									"GT": {
+										"courses_avg": 98
+									}
+								},
+								{
+									"IS": {
+										"courses_dept": "c*"
+									}
+								}
+							]
+						},
+						{
+							"EQ": {
+								"courses_avg": 95
+							}
+						}
+					]
+				},
+				{
+					"GT": {
+						"courses_pass": 200
+					}
+				}
+			]
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"courses_id",
+				"courses_dept",
+				"courses_pass"
+			],
+			"ORDER": "courses_pass"
+		}
+	},
+	"errorExpected": false,
+	"expected": [
+
+	]
+}

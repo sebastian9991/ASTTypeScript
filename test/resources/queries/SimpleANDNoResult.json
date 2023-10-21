@@ -1,0 +1,39 @@
+{
+	"title" : " Simple AND No Result",
+
+	"input" : {
+		"WHERE": {
+			"AND": [
+				{
+					"GT": {
+						"courses_pass": 100
+					}
+				},
+				{
+					"GT": {
+						"courses_avg": 150
+					}
+				}
+			]
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"courses_uuid",
+				"courses_title",
+				"courses_pass"
+			],
+			"ORDER": "courses_pass"
+		}
+	}
+
+,
+
+	"errorExpected" : false,
+
+	"verbose" : false,
+
+	"expected" : [
+	]
+
+
+}

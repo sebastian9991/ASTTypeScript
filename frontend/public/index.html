@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+		<title>310 Frontend</title>
+		<link href="/style.css" rel="stylesheet" />
+	</head>
+	<strong>Find courses taught by a instructor</strong>
+	<form id="instructor-form">
+		<label for="instructor-name">
+			<strong>Instructor name (last name, first name):</strong>
+			<input type="text" name="instructor_name" id="instructor-name">
+		</label>
+
+		<input type="submit" value="Search">
+	</form>
+	<strong>Find the average of a course during a time interval (in years)</strong>
+	<form id="avg-form">
+		<label for="course-dpt">
+			<strong>Course department (e.g. math):</strong>
+			<input type="text" name="course_dpt" id="course-dpt">
+		</label>
+
+		<label for="course-id">
+			<strong>Course id (e.g. 100):</strong>
+			<input type="text" name="course_id" id="course-id">
+		</label>
+
+		<label for="start">
+			<strong>Start year (e.g. 2010):</strong>
+			<input type="number" name="start" id="start">
+		</label>
+
+		<label for="end">
+			<strong>End year (e.g. 2012):</strong>
+			<input type="number" name="end" id="end">
+		</label>
+
+		<input type="submit" value="Find average">
+	</form>
+	<script type="text/javascript" src="/frontend.js"></script>
+</html>

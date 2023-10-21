@@ -1,0 +1,54 @@
+{
+  "title" : "validcoursesBigEQ test",
+
+  "input" : {
+
+    "WHERE":{
+
+      "EQ":{
+
+        "coursesBig_avg": 0
+
+      }
+
+    },
+
+    "OPTIONS":{
+
+      "COLUMNS":[
+
+        "coursesBig_uuid",
+
+        "coursesBig_avg"
+
+      ],
+
+      "ORDER":"coursesBig_avg"
+
+    }
+
+  }
+
+,
+
+  "errorExpected" : false,
+
+  "verbose" : false,
+
+  "expected" :  [
+    {
+      "coursesBig_uuid": "56403",
+      "coursesBig_avg": 0
+    },
+    {
+      "coursesBig_uuid": "56402",
+      "coursesBig_avg": 0
+    },
+    {
+      "coursesBig_uuid": "89536",
+      "coursesBig_avg": 0
+    }
+  ]
+
+
+}

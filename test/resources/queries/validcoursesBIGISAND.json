@@ -1,0 +1,184 @@
+{
+  "title" : " test",
+
+  "input" : {
+
+    "WHERE":{
+
+      "AND": [{
+        "EQ" : {
+          "coursesBig_pass" : 100
+        }
+
+      } , {
+        "IS": {
+          "coursesBig_dept": "c*"
+        }
+
+
+
+      }
+      ]
+    },
+
+    "OPTIONS":{
+
+      "COLUMNS":[
+
+        "coursesBig_uuid",
+
+        "coursesBig_dept",
+
+        "coursesBig_pass"
+
+      ],
+
+      "ORDER":"coursesBig_pass"
+
+    }
+
+  }
+
+,
+
+  "errorExpected" : false,
+
+  "verbose" : false,
+
+  "expected" :   [
+    {
+      "coursesBig_uuid": "50510",
+      "coursesBig_dept": "crwr",
+      "coursesBig_pass": 100
+    },
+    {
+      "coursesBig_uuid": "50509",
+      "coursesBig_dept": "crwr",
+      "coursesBig_pass": 100
+    },
+    {
+      "coursesBig_uuid": "46709",
+      "coursesBig_dept": "cpsc",
+      "coursesBig_pass": 100
+    },
+    {
+      "coursesBig_uuid": "83439",
+      "coursesBig_dept": "cpsc",
+      "coursesBig_pass": 100
+    },
+    {
+      "coursesBig_uuid": "1272",
+      "coursesBig_dept": "cpsc",
+      "coursesBig_pass": 100
+    },
+    {
+      "coursesBig_uuid": "49853",
+      "coursesBig_dept": "cpsc",
+      "coursesBig_pass": 100
+    },
+    {
+      "coursesBig_uuid": "71365",
+      "coursesBig_dept": "comm",
+      "coursesBig_pass": 100
+    },
+    {
+      "coursesBig_uuid": "918",
+      "coursesBig_dept": "comm",
+      "coursesBig_pass": 100
+    },
+    {
+      "coursesBig_uuid": "83679",
+      "coursesBig_dept": "comm",
+      "coursesBig_pass": 100
+    },
+    {
+      "coursesBig_uuid": "83678",
+      "coursesBig_dept": "comm",
+      "coursesBig_pass": 100
+    },
+    {
+      "coursesBig_uuid": "71242",
+      "coursesBig_dept": "comm",
+      "coursesBig_pass": 100
+    },
+    {
+      "coursesBig_uuid": "43967",
+      "coursesBig_dept": "comm",
+      "coursesBig_pass": 100
+    },
+    {
+      "coursesBig_uuid": "43965",
+      "coursesBig_dept": "comm",
+      "coursesBig_pass": 100
+    },
+    {
+      "coursesBig_uuid": "43893",
+      "coursesBig_dept": "comm",
+      "coursesBig_pass": 100
+    },
+    {
+      "coursesBig_uuid": "18606",
+      "coursesBig_dept": "clst",
+      "coursesBig_pass": 100
+    },
+    {
+      "coursesBig_uuid": "47589",
+      "coursesBig_dept": "civl",
+      "coursesBig_pass": 100
+    },
+    {
+      "coursesBig_uuid": "47527",
+      "coursesBig_dept": "civl",
+      "coursesBig_pass": 100
+    },
+    {
+      "coursesBig_uuid": "54555",
+      "coursesBig_dept": "chem",
+      "coursesBig_pass": 100
+    },
+    {
+      "coursesBig_uuid": "54554",
+      "coursesBig_dept": "chem",
+      "coursesBig_pass": 100
+    },
+    {
+      "coursesBig_uuid": "42568",
+      "coursesBig_dept": "chem",
+      "coursesBig_pass": 100
+    },
+    {
+      "coursesBig_uuid": "42567",
+      "coursesBig_dept": "chem",
+      "coursesBig_pass": 100
+    },
+    {
+      "coursesBig_uuid": "43890",
+      "coursesBig_dept": "chem",
+      "coursesBig_pass": 100
+    },
+    {
+      "coursesBig_uuid": "63602",
+      "coursesBig_dept": "chbe",
+      "coursesBig_pass": 100
+    },
+    {
+      "coursesBig_uuid": "63601",
+      "coursesBig_dept": "chbe",
+      "coursesBig_pass": 100
+    },
+    {
+      "coursesBig_uuid": "63594",
+      "coursesBig_dept": "chbe",
+      "coursesBig_pass": 100
+    },
+    {
+      "coursesBig_uuid": "63593",
+      "coursesBig_dept": "chbe",
+      "coursesBig_pass": 100
+    }
+  ]
+
+
+
+
+}

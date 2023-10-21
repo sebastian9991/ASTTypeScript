@@ -1,0 +1,41 @@
+{
+  "title" : " test",
+
+  "input" : {
+
+    "WHERE":{
+
+      "LT":{
+
+        "coursesBig_pass": 300
+
+      }
+
+    },
+
+    "OPTIONS":{
+
+      "COLUMNS":[
+
+        "coursesBig_title",
+
+        "coursesBig_pass"
+
+      ],
+
+      "ORDER":"coursesBig_avg"
+
+    }
+
+  }
+
+,
+
+  "errorExpected" : true,
+
+  "verbose" : false,
+
+  "expected" : "InsightError"
+
+
+}

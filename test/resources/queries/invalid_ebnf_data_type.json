@@ -1,0 +1,19 @@
+{
+  "title": "reject query with invalid data type in EQ (null)",
+  "input": {
+    "WHERE": {
+      "GT": {
+        "courses_avg": null
+      }
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "courses_dept",
+        "courses_avg"
+      ],
+      "ORDER": "courses_avg"
+    }
+  },
+  "errorExpected": true,
+  "expected": "InsightError"
+}

@@ -1,0 +1,49 @@
+{
+  "title" : " test",
+
+  "input" : {
+
+    "WHERE":{
+
+      "AND": [{
+
+
+      } , {
+        "GT" : {
+          "coursesBig_avg" : 99
+        }
+
+
+
+      }
+      ]
+    },
+
+    "OPTIONS":{
+
+      "COLUMNS":[
+
+        "coursesBig_uuid",
+
+        "coursesBig_dept",
+
+        "coursesBig_pass"
+
+      ],
+
+      "ORDER":"coursesBig_pass"
+
+    }
+
+  }
+
+,
+
+  "errorExpected" : true,
+
+  "verbose" : false,
+
+  "expected" : "InsightError"
+
+
+}

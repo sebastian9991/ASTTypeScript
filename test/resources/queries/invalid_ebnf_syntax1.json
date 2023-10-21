@@ -1,0 +1,12 @@
+{
+  "title": "reject query with invalid syntax (missing OPTIONS)",
+  "input": {
+    "WHERE": {
+      "IS": {
+        "courses_dept": "math"
+      }
+    }
+  },
+  "errorExpected": true,
+  "expected": "InsightError"
+}

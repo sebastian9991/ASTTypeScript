@@ -1,0 +1,29 @@
+{
+  "title": "fulfill query with asterisk in string",
+  "input": {
+    "WHERE": {
+      "AND": [
+        {
+          "IS": {
+            "courses_dept": "math*"
+          }
+        },
+        {
+          "LT": {
+            "courses_avg": 50
+          }
+        }
+      ]
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "courses_dept",
+        "courses_id",
+        "courses_avg"
+      ],
+      "ORDER": "courses_avg"
+    }
+  },
+  "errorExpected": false,
+  "expected": [{"courses_dept":"math","courses_id":"180","courses_avg":46.52},{"courses_dept":"math","courses_id":"180","courses_avg":49.95}]
+}

@@ -1,0 +1,41 @@
+{
+  "title" : "invalidcoursesBigLt test",
+
+  "input" : {
+
+    "WHERE":{
+
+      "LT":{
+
+        "coursesBig_avg": "error"
+
+      }
+
+    },
+
+    "OPTIONS":{
+
+      "COLUMNS":[
+
+        "coursesBig_instructor",
+
+        "coursesBig_avg"
+
+      ],
+
+      "ORDER":"coursesBig_avg"
+
+    }
+
+  }
+
+,
+
+  "errorExpected" : true,
+
+  "verbose" : false,
+
+  "expected" : "InsightError"
+
+
+}

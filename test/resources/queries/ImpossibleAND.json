@@ -1,0 +1,39 @@
+{
+	"title" : "ImpossibleAND",
+
+	"input" : {
+		"WHERE": {
+			"AND": [
+				{
+					"GT": {
+						"courses_avg": 80
+					}
+				},
+				{
+					"EQ": {
+						"courses_avg": 70
+					}
+				}
+			]
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"courses_uuid",
+				"courses_title",
+				"courses_pass"
+			],
+			"ORDER": "courses_pass"
+		}
+	}
+
+,
+
+	"errorExpected" : false,
+
+	"verbose" : false,
+
+	"expected" : [
+	]
+
+
+}

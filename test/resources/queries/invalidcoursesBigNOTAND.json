@@ -1,0 +1,54 @@
+{
+  "title" : " test",
+
+  "input" : {
+
+    "WHERE":{
+
+      "NOT" : {
+
+        "AND": [{
+          "EQ" : {
+            "coursesBig_pass" : 100
+          }
+
+        } , {
+          "GT" : {
+            "coursesBig_avg" : 80
+          }
+
+
+
+        }
+        ]
+      }
+    },
+
+    "OPTIONS":{
+
+      "COLUMNS":[
+
+        "coursesBig_uuid",
+
+        "coursesBig_dept",
+
+        "coursesBig_pass"
+
+      ],
+
+      "ORDER":"coursesBig_pass"
+
+    }
+
+  }
+
+,
+
+  "errorExpected" : true,
+
+  "verbose" : false,
+
+  "expected" : "ResultTooLargeError"
+
+
+}
